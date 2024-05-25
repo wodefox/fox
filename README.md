@@ -3,6 +3,7 @@
 
 反向连接的控制端如下：
 
+###
 import socket
 import threading
 import subprocess
@@ -213,10 +214,12 @@ def main():
     client_loop()
 
 if __name__ == "__main__":
-    main()
+    main() 
+###
     
 反向连接被控制端代码如下：
 
+###
 import socket
 import threading
 
@@ -295,6 +298,7 @@ def client_loop():
         print("\n[!] Closing connection...")
     finally:
         client.close()
-
+        
 if __name__ == "__main__":
     client_loop()
+    ###
